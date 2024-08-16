@@ -1,94 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VSO</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <script src="js/script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Valorant Stream Overlay</title>
+    <link rel="stylesheet" href="css/clash-display.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-
 <body>
-    <container id="container-main">
-        <container id="container-left">
-            <h1>Your <span class="color-effect">Stats</span><br>In Your Stream</h1>
-
-            <p id="subtitle">Want to show off your stats?<br>Use VSO for the best experience</p>
-
-            <container id="container-buttons">
-                <div id="button-download" class="button" onclick="window.open('https://github.com/vaneeyo/valorant-stream-overlay/releases/latest', '_blank').focus();">
-                    <img src="res/ic_oui_download.svg">
-                    Download
-                </div>
-
-                <div id="button-github" class="button" onclick="window.open('https://github.com/vaneeyo/valorant-stream-overlay', '_blank').focus();">
-                    <img src="res/github-mark-white.svg">
-                    Visit
-                </div>
-            </container>
-
-
-        </container>
-
-        <container id="container-right">
-            <bubble>
-                <container class="container-stats">
-                    <span>HS%</span>
-                    <span>42.7%</span>
-                </container>
-
-                <img id="vandal-icon"
-                    src="https://media.valorant-api.com/weaponskins/b9ee2457-481c-6776-3f5b-0ca8e8f90c89/displayicon.png">
-            </bubble>
-
-            <bubble>
-                <img id="rank-icon"
-                    src="https://media.valorant-api.com/competitivetiers/564d8e28-c226-3180-6285-e48a390db8b1/19/largeicon.png">
-
-                <container id="container-rank">
-                    <strong id="user-name">猫とご飯#JPN</strong>
-                    <span id="rank-name">Diamond 2</span>
-                    <div id="rank-progressbar">
-                        <div id="rank-progress"></div>
-                    </div>
-                    <div id="rank_progress_text">
-                        <span>Rank Rating</span>
-                        <span id="rank_progress_rr">43/100</span>
-                    </div>
-                </container>
-
-            </bubble>
-
-            <bubble>
-                <container class="container-stats">
-                    <span>KAD</span>
-                    <span>1.24</span>
-                </container>
-
-                <container class="container-stats">
-                    <span>KAST</span>
-                    <span>67.5%</span>
-                </container>
-
-                <container class="container-stats">
-                    <span>HS%</span>
-                    <span>13.91%</span>
-                </container>
-            </bubble>
-        </container>
-    </container>
-
-    <container id="container-bottom">
-        <container id="container-user">
-            <h1>Easy to Use</h1>
-        </container>
-
-        <container id="container-price">
-            <h1>100% Free</h1>
-        </container>
-    </container>
+    <div id="front"> 
+        <img src="res/Logo.png" id="logo-front">
+        <h1 id="front-text">Meet VSO. The best way to show off your Valorant Stats as a Streamer</h1>
+        <span id="front-subtext">An open-source windows overlay to show off your Valorant Stats as a Streamer</span>
+        <a href="https://github.com/Vaneeyo/Valorant-Stream-Overlay/releases/latest"><button id="front-download">Download</button></a>
+        <span id="front-download-subtext">for Windows 10+</span>
+    </div>
 </body>
-
 </html>
